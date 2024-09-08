@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial system</title>
+    <style>
+        body {
+            padding-top: 100px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: blue;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: blue;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-section {
+            margin: 10px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 150px;
+            margin-bottom: 100px;
+        }
+
+        .container li {
+            text-decoration: overline;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container img {
+                width: 50%;
+            }
+
+            .container li {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container img {
+                width: 60%;
+            }
+
+            .container li {
+                font-size: 12px;
+            }
+            .footer{
+              position:relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><marquee>HAND WRITTEN NOTES PDF</marquee></h1>
+    </header>
+
+    <div class="container">
+        <img src="p.jpg" width="20%;">
+        <li><a href="dpc.pdf">DISTERBUTED PARLLEL COMPUTER</a></li><br>
+        <li><a href="sql.pdf">STRUCTURE QUERY LANGUAGE</a></li><br>
+        <li><a href="dcn.pdf">DATA COMPUTER NETWORK</a></li><br>
+        <li><a href="software eng.pdf">SOFTWARE ENGINNERING</a></li><br>
+        <li><a href="software testing .pdf">SOFTWARE TESTING</a></li><br>
+        <li><a href="web.pdf">WEBTECHNOLOGY</a></li><br>
+        <li><a href="os.pdf">OPERATING SYSTEM</a></li><br>
+        <li><a href="multimedia .pdf">MULTIMEDIA</a></li><br>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h1>WELCOME TO MY PAGE</h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
