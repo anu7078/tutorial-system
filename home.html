@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('h1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        nav {
+            color: white;
+            text-align: right;
+            padding: 10px 20px;
+          
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .footer {
+            background-color: blue;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom:0;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            margin: 10px;
+        }
+
+        .footer-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .footer-links li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav {
+                text-align: center;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+            .footer-section {
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li a {
+                padding: 8px 10px;
+                font-size: 14px;
+            
+            }
+
+            .footer {
+                padding: 15px;
+            }
+
+            .footer-links li a {
+                font-size: 14px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="notes.html">HAND WRITTEN NOTES</a></li>
+            <li><a href="tutorial.html">SPM</a></li>
+            <li><a href="mcq.html">MCQ</a></li>
+        </ul>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"></div>
+            <ul class="footer-links">
+                <li><a href="https://youtube.com/playlist?list=PLptLP7KjDoqVRWHPQIIstwlbKbr-OCG3l&si=npVnkLgicLKEPoiV">JOIN YOUTUBE</a></li>
+                <li><a href="https://hnbgu.ac.in/sites/default/files/2023-08/BCA%20NEP%20SYLLABUS.pdf">HNBGU SYLLABUS</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
