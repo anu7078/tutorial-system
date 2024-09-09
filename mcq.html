@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial system</title>
+</head>
+<body>
+
+    <style>
+        body { 
+    font-family: 'Arial', sans-serif;
+    margin:0;
+    padding:0; 
+  }
+   
+ nav{
+        background-color: rgb(0, 17, 255);
+        color:antiquewhite;
+        padding:10px 0;
+        margin-bottom: 20px;
+ }
+        nav ul {
+            list-style-type:none;
+            padding: 0%;
+            display:flex;
+           justify-content: center;
+        }
+        nav ul li a{
+          text-decoration: none;
+          font-weight: bold;
+          color:white;
+          padding:10px 20px;
+        
+        }
+        img{
+            display:block;
+            margin:0 auto;
+            height:fit-content;
+            width: 80%;
+        } 
+        h1 {
+    text-align: center;
+    color:blue;
+    margin: 40px 0;
+    }   
+    .container {
+    max-width: 85%; 
+    
+  
+  
+    }
+    .question-container {
+    margin-bottom: 20px;
+    }
+  .question {
+    font-weight: bold;
+  }
+  .options {
+    margin-bottom: 20px;
+    
+  }
+  .answer {
+    display: none;
+    padding: 10px;
+    font-weight: bold;
+    color:  green;
+  }
+  .footer {
+  background-color:blue;
+  text-align: center;
+    padding: 20px 0;
+  position:absolute;
+  
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  
+}
+
+.footer-links li a:hover {
+  color: #4CAF50;
+}
+@media (max-width: 480px) {
+            nav ul li a {
+                padding: 5px 10px;
+            }
+
+            img {
+                width: 100%;
+            }
+          }
+    </style>
+    <nav>
+    
+        <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="tutorial.html">SPM</a></li>
+        <li><a href="about.html">MCQ</a></li> 
+
+    </ul>
+</nav> 
+
+
+<img src="mcq.jpg">
+
+<h1>MCQ QUESTION</h1>
+<div class="question-container">
+    <div class="question">1.Question: Which software development model is suitable for uncertainties on some functionalities at the beginning which will improve over time?</div>
+    <div class="options">
+      a) Waterfall<br>
+      b) V-Model<br>
+      c) Iterative<br>
+      d) Spiral
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer: Iterative</div>
+  </div>
+  <div class="question-container">
+    <div class="question">2.Question: What is the Object point method best suited for?</div>
+    <div class="options">
+      a) Designing<br>
+      b) Testing<br>
+      c) Coding<br>
+      d) Estimation
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer: Estimation</div>
+  </div>
+  <div class="question-container">
+    <div class="question">3.Question: Which term is least critical from the customer viewpoint?</div>
+    <div class="options">
+      a) UAT<br>
+      b) Unit testing<br>
+      c) Delivery timeliness<br>
+      d) Milestones
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer: Milestones</div>
+  </div>
+  <div class="question-container">
+    <div class="question">4.Question: Which method is not used for project planning?</div>
+    <div class="options">
+      a) Activity Diagram<br>
+      b) CPM<br>
+      c) Timesheet<br>
+      d) Gantt chart
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer: Timesheet</div>
+  </div>
+  <div class="question-container">
+    <div class="question">5.Question: How many types of Work Breakdown Structures are there?</div>
+    <div class="options">
+      a) One<br>
+      b) Three<br>
+      c) Four<br>
+      d) Two
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer: Two</div>
+  </div>
+  <div class="question-container">
+    <div class="question">6.Question: Which of the following is not project management goal?</div>
+    <div class="options">
+      a) keeping overall costs within budget<br>
+      b)	delivering the software to the customer at the agreed time<br>
+      c)	maintaining a happy and well-functioning development team<br>
+      d)	avoiding customer complaints<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer: avoiding customer complaints</div>
+  </div>
+  <div class="question-container">
+    <div class="question">7.Question: Project managers have to assess the risks that may affect a project.</div>
+    <div class="options">
+  a)true<br>
+	b)false<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer:False</div>
+  </div>
+  <div class="question-container">
+  <div class="question">8.Question: The process each manager follows during the life of a project is known as</div>
+  <div class="options">
+    a)project management<br>
+    b)	manager life cycle<br>
+    c)	project management life cycle<br>
+    d)all of the mentioned<br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer: project management life cycle</div>
+</div>
+<div class="question-container">
+  <div class="question">9.Question: A 66.6% risk is considered as</div>
+  <div class="options">
+  a)very low<br>
+	b)low<br>
+	c)moderate<br>
+	d)high<br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer: high</div>
+</div>
+<div class="question-container">
+  <div class="question">10.Question: Which of the following is/are main parameters that you should use when computing the costs of a software development project?</div>
+  <div class="options">
+   a) travel and training costs<br>
+   b)	hardware and software costs<br>
+   c)	effort costs (the costs of paying software engineers and managers<br>
+   d)	all of the mentioned<br>
+  </div>
+   <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+   <div class="answer">Answer: all of the mentioned</div>
+</div>
+<div class="question-container">
+  <div class="question">11.Question:Quality planning is the process of developing a quality plan for</div>
+  <div class="options">
+a) team<br>
+b) project<br>
+c) customers<br>
+d) project manager<br>
+</div>
+<button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer:Project</div> 
+</div>
+<div class="question-container">
+  <div class="question">12.Question:Which of the following is incorrect activity for the configuration management of a software system?</div>
+  <div class="options">
+  a)internship management<br>
+	b)change management<br>
+	c)version management<br>
+	d)system management<br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer: internship management</div> 
+</div>
+<div class="question-container">
+  <div class="question">13.Question:	
+    An independent relationship must exist between the attribute that can be measured and the external quality attribute.</div>
+  <div class="options">
+  a)True<br>
+  b)False<br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer: false</div> 
+</div>
+<div class="question-container">
+  <div class="question">14.Question:	Which of these truly defines Software design?</div>
+  <div class="options">
+ a) software design is an activity subjected to constraints<br>
+ b)	software design specifies nature and composition of software product<br>
+ c)	software design satisfies client needs and desires<br>
+ d)	all of the mentioned<br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer: all of the mentioned</div> 
+  </div>
+  <div class="question-container">
+    <div class="question">15.Question:	Which of these describes stepwise refinement?</div>
+    <div class="options">
+a) nicklaus wirth described the first software engineering method as stepwise refinement<br>
+b)	stepwise refinement follows its existence from 1971<br>
+c)	it is a top down approach<br>
+d)	all of the mentioned<br>
+    </div>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer:all of the mentioned </div> 
+</div>
+<div class="question-container">
+  <div class="question">16.Question:What is incorrect about structural design?	</div>
+  <div class="options">
+ a)structural design introduced notations and heuristics<br>
+ b)structural design emphasis on procedural decomposition<br>
+ c)the advantage is data flow representation<br>
+ d)it follows structure chart<br>
+  </div>
+ <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer:the advantage is data flow representation </div> 
+</div>
+<div class="question-container">
+  <div class="question">17.Question:What is followed by the design task?	</div>
+  <div class="options">
+  a) choosing specific classes, operations<br>
+	b) checking model’s completeness<br>
+	c) following design task heuristics<br>
+	d) all of the mentioned<br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer:all of the mentioned </div> 
+</div>
+<div class="question-container">
+  <div class="question">18.Question:Efficiency in a software product does not include  	</div>
+  <div class="options">
+  a) responsiveness<br>
+  b) licensing<br>
+  c) memory utilization<br>
+  d) processing time<br>
+</div>
+<button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer:licensing</div> 
+</div>
+<div class="question-container">
+  <div class="question">19.Question: Which of these are not among the eight principles followed by Software Engineering Code of Ethics and Professional Practice ? 	</div>
+  <div class="options">
+  a) public<br>
+  b) profession<br>
+  c) product<br>
+  d)environment <br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer:environment</div> 
+</div>
+<div class="question-container">
+  <div class="question">20.Question:Which of these does not account for software failure ?	</div>
+  <div class="options">
+   a) increasing demand<br>
+   b) ow expectation<br>
+   c)	increasing supply<br>
+   d)	less reliable and expensive<br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer:increasing supply</div> 
+  </div>
+  <div class="question-container">
+    <div class="question">21.Question:Which of these does not affect different types of software as a whole?</div>
+    <div class="options">
+ a) heterogeneity<br>
+ b)	flexibility<br>
+ c)	business and social change<br>
+ d)	security<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer:flexibility</div> 
+  </div>
+  <div class="question-container">
+    <div class="question">22.Question:The fundamental notions of software engineering does not account for ?</div>
+    <div class="options">
+  a) software processes<br>
+  b)software security<br>
+	c)software reuse<br>
+	d)software validation<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer:software validation</div> 
+  </div>
+  <div class="question-container">
+    <div class="question">23.Question:	
+      Which one of the following is not a software process quality?</div>
+    <div class="options">
+ a)  productivity<br>
+ b)	portability<br>
+ c)	timeliness<br>
+ d)	visibility<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer:portability</div> 
+  </div>
+  <div class="question-container">
+    <div class="question">24.Question:	Software costs more to maintain than it does to develop.</div>
+    <div class="options">
+  a)true<br>>
+  b)false<br>
+    </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer:true</div> 
+  </div>
+  <div class="question-container">
+    <div class="question">25.Question: Which one of the following is not an application of embedded software product? </div>
+    <div class="options">
+a) eypad control of a security system<br>
+b) pattern recognition game playing<br>
+c) digital function of dashboard display in a car<br>
+d) none of the mentioned<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer:pattern recognition game playing</div> 
+  </div>
+  <div class="question-container">
+    <div class="question">26.Question:Purpose of process is to deliver software</div>
+    <div class="options">
+a) in time<br>
+b) with acceptable quality<br>
+c) that is cost efficient<br>
+d) both in time & with acceptable quality<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+    <div class="answer">Answer:both in time & with acceptable quality</div> 
+    </div> 
+    <div class="question-container">
+      <div class="question">27.Question: Which of the following activities of a Generic Process framework provides a feedback report?</div>
+      <div class="options">
+a) communication<br>
+b) planning<br>
+c) modeling & construction<br>
+d) deployment<br>
+      </div>
+      <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+      <div class="answer">Answer:deployment</div> 
+      </div> 
+      <div class="question-container">
+        <div class="question">28.Question: Process adopted for one project is same as the process adopted from another project.</div>
+        <div class="options">
+a)  true<br>
+b)false<br>
+        </div>
+        <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+      <div class="answer">Answer:false</div> 
+      </div> 
+      <div class="question-container">
+        <div class="question">29.Question:Which one of the following is not an Umbrella Activity that complements the five process framework activities and help team manage and control progress, quality, change, and risk.</div>
+        <div class="options">
+a) reusability management<br>
+b) risk management<br>
+c) measurement<br>
+d) user reviews<br>
+        </div>
+<button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+      <div class="answer">Answer:user reviews</div> 
+      </div> 
+      <div class="question-container">
+        <div class="question">30.Question:Four types of change are encountered during the support phase.Which one of the following is not one that falls into such category?</div>
+        <div class="options">
+a)  translation<br>
+b)	correction<br>
+c)	adaptation<br>
+d)	prevention<br>
+        </div>
+        <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+        <div class="answer">Answer:translation</div> 
+        </div>  
+        <div class="question-container">
+          <div class="question">31.Question:SCM stands for</div>
+          <div class="options"> 
+  a) software control management<br>
+  b)	software configuration management<br>
+  c)software concept management<br>
+  d)none of the mentioned <br>
+  </div>
+  <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer:software configuration management</div> 
+  </div>  
+  <div class="question-container">
+    <div class="question">32.Question:When code is made available to others, it goes in a/an</div>
+    <div class="options"> 
+  a) hard drive<br>
+  b) access-controlled library<br>
+  c) servers<br>
+  d) access control<br>
+    </div>
+    <button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+  <div class="answer">Answer: access-controlled library</div> 
+  </div> 
+  <div class="question-container">
+    <div class="question">33.Question:CM is about managing the different items in the product, and changes in them.</div>
+    <div class="options"> 
+a)true<br>
+b)false<br>
+c)topic 1.6 management control<br>
+</div>
+<button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer: true</div> 
+</div> 
+<div class="question-container">
+  <div class="question">34.Question:What allows different projects to use the same source files at the same time?.</div>
+  <div class="options">
+a) version control<br>
+b) access control<br>
+c)	cm process<br>
+d)	version control and access control<br>
+</div>
+<button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer:version control</div> 
+</div> 
+<div class="question-container">
+  <div class="question">35.Question:Which of the following is not a change management process?.</div>
+  <div class="options">
+a) log the changes<br>
+b) estimate impact on effort and schedule<br>
+c) review impact with stakeholders<br>
+d) none of the mentioned<br>
+</div>
+<button onclick="toggleAnswer(this.nextElementSibling)">Show Answer</button>
+<div class="answer">Answer: none of the mentioned</div> 
+</div> 
+
+  <script>
+    
+    function toggleAnswer(answerDiv) {
+      if (answerDiv.style.display === 'none') {
+        answerDiv.style.display = 'block';
+      } else {
+        answerDiv.style.display = 'none';
+      }
+    }
+  </script>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <ul class="footer-links">
+      <li><h2><a href="paper.pdf"> PREVIOUS YEAR QUESTION PAPER</a></h2></li>
+    
+      
+
+      </ul>
+    </div>
+    
+  </div>
+</body>
+</html>
